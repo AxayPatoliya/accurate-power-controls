@@ -14,9 +14,28 @@
       width: 100%;
       height: 100vh;
     }
+    /* styling for coming soon */
+    .blinking-coming-soon {
+        position: fixed;
+        top: 15px;
+        left: 20px;
+        font-size: 18px;
+        color: #dc3545;
+        font-weight: bold;
+        animation: blink 1s step-start infinite;
+        z-index: 9999;
+        font-family: Arial, sans-serif;
+    }
+
+    @keyframes blink {
+        50% {
+        opacity: 0;
+        }
+    }
   </style>
 </head>
 <body>
+  <div class="blinking-coming-soon">Website Coming Soon...</div>
   <h1>Welcome to Accurate Power Control</h1>
   <p>View our brochure below:</p>
   <iframe src="brochure.pdf"></iframe>
